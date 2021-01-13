@@ -1,12 +1,18 @@
+import { BrowserRouter, Route } from "react-router-dom";
 import ListOfCards from "./ListOfCards"
-import { BrowserRouter } from "react-router-dom";
+import MainPage from "./MainPage";
 
 function App() {
   return (
     <BrowserRouter>
-      <ListOfCards />
+      <Route path="/">
+        <MainPage />
+      </Route>
+      <Route path="/pokemons">
+        <ListOfCards />
+      </Route>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

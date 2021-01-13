@@ -1,3 +1,4 @@
+import { Route } from 'react-router-dom'
 import {useState, useEffect } from 'react'
 import styles from './Card.module.css'
 import { Link } from 'react-router-dom'
@@ -17,9 +18,13 @@ function Card (props) {
   return (
     <div className={styles.card}>
       <Link to={`/${props.id}`}>
-        <img src={`https://pokeres.bastionbot.org/images/pokemon/${props.id}.png`} />
-        <Pokemon info={pokemonId}/>
+        <img
+          src={`https://pokeres.bastionbot.org/images/pokemon/${props.id}.png`}
+        />
+        {props.name}
+        {/* <Pokemon info={pokemonId} /> */}
       </Link>
+      {/* <Route path="/:id" component={Pokemon}></Route> */}
     </div>
   );
 }

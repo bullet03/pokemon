@@ -1,6 +1,7 @@
 const Pokemon = (props) => {
+  debugger
   const { name, height } = props.info
-  return <div>{name} {height}</div>;
+  return <div>123455</div>;
 }
 
 export default Pokemon;
