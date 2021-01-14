@@ -1,10 +1,16 @@
-.card {
-  margin: 10px;
+.text {
+  font-size: 22px;
+  color: #D13715;
 }
+
 
 .card img {
   height: 200px;
   width: 200px;
   background-color: #B3614F;
   border: 2px solid red;
+}
+
+.data {
+  text-decoration: underline;
 }

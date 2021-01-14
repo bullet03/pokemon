@@ -1,6 +1,7 @@
 import { BrowserRouter, Route } from "react-router-dom";
 import ListOfCards from "./ListOfCards"
 import MainPage from "./MainPage";
+import Pokemon from "./Pokemon/Pokemon";
 
 function App() {
   return (
@@ -8,8 +9,11 @@ function App() {
       <Route path="/">
         <MainPage />
       </Route>
-      <Route path="/pokemons">
+      <Route exact path="/pokemons">
         <ListOfCards />
+      </Route>
+      <Route path="/pokemons/:id">
+        <Pokemon />
       </Route>
     </BrowserRouter>
   );
