@@ -1,11 +1,11 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import ListOfCards from "./ListOfCards"
 import MainPage from "./MainPage";
 import Pokemon from "./Pokemon/Pokemon";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Route path="/">
         <MainPage />
       </Route>
@@ -15,7 +15,7 @@ function App() {
       <Route path="/pokemons/:id">
         <Pokemon />
       </Route>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
